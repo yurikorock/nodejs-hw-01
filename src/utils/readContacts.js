@@ -12,7 +12,7 @@ const pathToDb = path.resolve(__dirname, PATH_DB);
 export const readContacts = async () => {
   try {
     const fileContent = await fs.readFile(pathToDb, 'utf8');
-    console.log('Вміст файлу:', fileContent);
+    // console.log('Вміст файлу:', fileContent);
     return JSON.parse(fileContent);
   } catch (err) {
     console.error('Помилка читання файлу:', err);
