@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "id": "2c3f62bb-8e24-435e-b7ac-dc50aad4f5de",
+    "fullName": "Dustin Ryan",
+    "phonenumber": "487-804-4726",
+    "email": "Kristopher.Jerde67@gmail.com",
+    "jobTitle": "Dynamic Metrics Developer"
+  },
+  {
+    "id": "c96f9ee3-7f45-424d-a84c-3ead02bc1870",
+    "fullName": "Guadalupe Welch V",
+    "phonenumber": "410.244.7936",
+    "email": "Vita44@yahoo.com",
+    "jobTitle": "Global Program Associate"
+  },
+  {
+    "id": "17c3d8cd-4943-4c30-9522-9be54c7fa65c",
+    "fullName": "Ms. Flora Bauch",
+    "phonenumber": "884.476.0113",
+    "email": "Beth_Baumbach2@hotmail.com",
+    "jobTitle": "Human Tactics Assistant"
+  },
+  {
+    "id": "4e936b74-2af1-4b9a-99b0-5c642316875e",
+    "fullName": "Doug Barrows",
+    "phonenumber": "832-775-1589 x788",
+    "email": "Joanny_Mueller@gmail.com",
+    "jobTitle": "Human Web Specialist"
+  }
+]
