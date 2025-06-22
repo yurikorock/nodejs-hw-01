@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "id": "281db087-6d9f-41b9-bf5e-ddfa50882719",
+    "fullName": "Brad Champlin",
+    "phonenumber": "559.254.7897 x566",
+    "email": "Ward.Lind@gmail.com",
+    "jobTitle": "Regional Directives Technician"
+  },
+  {
+    "id": "d3114781-88dc-4400-829e-7a1edab46968",
+    "fullName": "Diana Morissette IV",
+    "phonenumber": "(939) 607-0187",
+    "email": "Leda_OKon@hotmail.com",
+    "jobTitle": "Customer Intranet Analyst"
+  },
+  {
+    "id": "b2f515a1-cb76-4a5b-a1dc-25eed0ac41cf",
+    "fullName": "Karl Schaden MD",
+    "phonenumber": "533-688-4943 x502",
+    "email": "Clement.Hackett50@yahoo.com",
+    "jobTitle": "Forward Integration Developer"
+  },
+  {
+    "id": "986b3470-589c-4de3-9c1b-98d9e304b7e6",
+    "fullName": "Marlon Mayer",
+    "phonenumber": "(414) 846-6749",
+    "email": "Noah.Fisher-Miller@hotmail.com",
+    "jobTitle": "Internal Communications Director"
+  },
+  {
+    "id": "cf71ba2f-96a8-4423-aced-ef4973361165",
+    "fullName": "Leah Hyatt",
+    "phonenumber": "1-248-205-3648 x56439",
+    "email": "Anya_Jast12@yahoo.com",
+    "jobTitle": "Human Interactions Analyst"
+  }
+]

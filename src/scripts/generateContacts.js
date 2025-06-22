@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker';
-import { readContacts } from '../utils/readContacts';
-import { writeContacts } from '../utils/writeContacts';
+import { readContacts } from '../utils/readContacts.js';
+import { writeContacts } from '../utils/writeContacts.js';
 
 //створюємо шаблон 1 контакту з даними у вигляді обєкту
 const createFakeContact = () => {
@@ -27,6 +27,10 @@ const generateContacts = async (number) => {
     fakeContacts.push(contact);
   }
   const existingContacts = await readContacts(); //отримуємо існуючі контакти
+  if (!existingContacts) {
+    console.error('не вдалося прочитати існуючі контакти.');
+    return;
+  }
   const allContacts = [...existingContacts, ...fakeContacts]; //записуємо до існуючих контактів фейкові контакти
   await writeContacts(allContacts); // записуємо назад оновлені контакти в db.json
   console.log(`Додано нових контактів в кількості : ${number}`);
