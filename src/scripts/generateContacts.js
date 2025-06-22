@@ -18,7 +18,7 @@ const createFakeContact = () => {
   };
 };
 
-const generateContacts = async (number) => {
+export const generateContacts = async (number) => {
   const fakeContacts = []; // створюємо масив для контактів
 
   //наповнюємо масив із number фейкових контактів через createFakeContact
@@ -36,7 +36,7 @@ const generateContacts = async (number) => {
   console.log(`Додано нових контактів в кількості : ${number}`);
 };
 
-generateContacts(5);
+// generateContacts(5);
 
 // У файлі src / scripts / generateContacts.js опишіть функцію generateContacts.
 // Вона має за допомогою функції createFakeContact, створювати передану кількість
