@@ -1,22 +1,6 @@
-import { faker } from '@faker-js/faker';
 import { readContacts } from '../utils/readContacts.js';
 import { writeContacts } from '../utils/writeContacts.js';
-
-//створюємо шаблон 1 контакту з даними у вигляді обєкту
-const createFakeContact = () => {
-  const randomId = faker.string.uuid();
-  const randomName = faker.person.fullName();
-  const randomPhoneNumber = faker.phone.number();
-  const randomEmail = faker.internet.email();
-  const randomJobTitle = faker.person.jobTitle();
-  return {
-    id: randomId,
-    fullName: randomName,
-    phonenumber: randomPhoneNumber,
-    email: randomEmail,
-    jobTitle: randomJobTitle,
-  };
-};
+import { createFakeContact } from '../utils/createFakeContact.js';
 
 export const generateContacts = async (number) => {
   const fakeContacts = []; // створюємо масив для контактів
@@ -36,7 +20,7 @@ export const generateContacts = async (number) => {
   console.log(`Додано нових контактів в кількості : ${number}`);
 };
 
-// generateContacts(5);
+generateContacts(5);
 
 // У файлі src / scripts / generateContacts.js опишіть функцію generateContacts.
 // Вона має за допомогою функції createFakeContact, створювати передану кількість

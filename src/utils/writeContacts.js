@@ -2,12 +2,7 @@ import { PATH_DB } from '../constants/contacts.js';
 import path from 'node:path';
 import fs from 'node:fs/promises';
 
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const pathToDb = path.resolve(__dirname, PATH_DB);
+const pathToDb = path.resolve(process.cwd(), PATH_DB);
 
 export const writeContacts = async (updatedContacts) => {
   const data = JSON.stringify(updatedContacts, null, 2);
