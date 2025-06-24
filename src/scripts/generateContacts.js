@@ -2,9 +2,9 @@ import { readContacts } from '../utils/readContacts.js';
 import { writeContacts } from '../utils/writeContacts.js';
 import { createFakeContact } from '../utils/createFakeContact.js';
 
-export const generateContacts = async (number) => {
-  const fakeContacts = []; // створюємо масив для контактів
+const fakeContacts = []; // створюємо масив для контактів
 
+export const generateContacts = async (number) => {
   //наповнюємо масив із number фейкових контактів через createFakeContact
   for (let i = 0; i < number; i++) {
     const contact = createFakeContact();
