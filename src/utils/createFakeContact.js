@@ -12,7 +12,7 @@ import { faker } from '@faker-js/faker';
 export const createFakeContact = () => {
   const randomId = faker.string.uuid();
   const randomName = faker.person.fullName();
-  const randomPhoneNumber = faker.phone.number();
+  const randomPhoneNumber = faker.phone.number({ style: 'international' });
   const randomEmail = faker.internet.email();
   const randomJobTitle = faker.person.jobTitle();
   return {
