@@ -1,7 +1,20 @@
-import { generateContacts } from './generateContacts.js';
+import { createFakeContact } from '../utils/createFakeContact.js';
+import { readContacts } from '../utils/readContacts.js';
+import { writeContacts } from '../utils/writeContacts.js';
 
 export const addOneContact = async () => {
-  await generateContacts(1);
+  const fakeContact = []; // створюємо масив для контактів
+
+  const oneContact = createFakeContact();
+  fakeContact.push(oneContact);
+  const existingContacts = await readContacts(); //отримуємо існуючі контакти
+  if (!existingContacts) {
+    console.error('не вдалося прочитати існуючі контакти.');
+    return;
+  }
+  const allContacts = [...existingContacts, ...fakeContact]; //записуємо до існуючих контактів 1 фейковий контакт
+  await writeContacts(allContacts); // записуємо назад оновлені контакти в db.json
+  console.log(`Додано нових контактів в кількості : 1`);
 };
 
 addOneContact();
